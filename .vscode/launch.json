@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch A",
+            "request": "launch",
+            "mainClass": "A",
+            "projectName": "er_c8cba058"
+        },
+        {
+            "type": "php",
+            "request": "launch",
+            "name": "Run using local PHP Interpreter",
+            "program": "${file}",
+            "runtimeExecutable": "F:\\xampp\\php\\php.exe"
+        }
+    ]
+}
