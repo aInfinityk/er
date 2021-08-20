@@ -15,24 +15,24 @@ class all {
     for (i = 1; i <= n; i++) {
       fact = fact * i;
     }
-    System.out.println("Factorial of " + n + "is: " + fact);
+    System.out.println("Factorial of " + n + " is " + fact+".");
   }
 
   // Prime
   void prime(int n) {
     int i, flag = 0, m = n / 2;
     if (n == 0 || n == 1) {
-      System.out.println(n + " is not prime number");
+      System.out.println(n + " is not prime number.");
     } else {
       for (i = 2; i <= m; i++) {
         if (n % i == 0) {
-          System.out.println(n + " is not prime number");
+          System.out.println(n + " is not prime number.");
           flag = 1;
           break;
         }
       }
       if (flag == 0) {
-        System.out.println(n + " is prime number");
+        System.out.println(n + " is prime number.");
       }
     }
   }
@@ -59,10 +59,10 @@ class all {
   }
 
   // Fibonacci
-  void fibo() {
-    int n1 = 0, n2 = 1, n3, i, count = 10;
+  void fibo(int n) {
+    int n1 = 0, n2 = 1, n3, i;
     System.out.print(n1 + " " + n2);
-    for (i = 2; i < count; ++i) {
+    for (i = 2; i < n; ++i) {
       n3 = n1 + n2;
       System.out.print(" " + n3);
       n1 = n2;
@@ -78,6 +78,6 @@ public class A {
     ob.factorial(ob.number);
     ob.prime(ob.number);
     ob.armstrong(ob.number);
-    ob.fibo();
+    ob.fibo(ob.number);
   }
 }
