@@ -37,10 +37,6 @@ class all {
     }
   }
 
-  void allprime(int n) {
-
-  }
-
   // Armstrong
   void armstrong(int number) {
     int originalNumber, remainder, result = 0, n = 0;
