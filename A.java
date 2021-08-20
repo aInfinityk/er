@@ -1,15 +1,21 @@
+import java.util.Scanner;
+
 class all {
   int number;
+  Scanner sc = new Scanner(System.in);
 
   all() {
-    number = 13;
+    System.out.println("Enter the number for operations: ");
+    number = sc.nextInt();
   }
 
-  int factorial(int n) {
-    if (n == 0)
-      return 1;
-    else
-      return (n * factorial(n - 1));
+  void factorial(int n) {
+    int i, fact=1;
+    for(i=1;i<=n;i++)
+    {
+      fact=fact*i;
+    }
+    System.out.println("Factorial of "+n+"is: "+fact);
   }
 
   void prime(int n) {
@@ -61,7 +67,7 @@ class all {
 public class A {
   public static void main(String args[]) {
     all ob = new all();
-    System.out.println("Factorial of " + ob.number + " is = " + ob.factorial(ob.number));
+    ob.factorial(ob.number);
     ob.prime(ob.number);
     ob.armstrong(ob.number);
     ob.fibo();
