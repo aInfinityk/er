@@ -5,19 +5,20 @@ class all {
   Scanner sc = new Scanner(System.in);
 
   all() {
-    System.out.println("Enter the number for operations: ");
+    System.out.println("Enter a number for operations: ");
     number = sc.nextInt();
   }
 
+  // Factorial
   void factorial(int n) {
-    int i, fact=1;
-    for(i=1;i<=n;i++)
-    {
-      fact=fact*i;
+    int i, fact = 1;
+    for (i = 1; i <= n; i++) {
+      fact = fact * i;
     }
-    System.out.println("Factorial of "+n+"is: "+fact);
+    System.out.println("Factorial of " + n + "is: " + fact);
   }
 
+  // Prime
   void prime(int n) {
     int i, flag = 0, m = n / 2;
     if (n == 0 || n == 1) {
@@ -36,6 +37,11 @@ class all {
     }
   }
 
+  void allprime(int n) {
+
+  }
+
+  // Armstrong
   void armstrong(int number) {
     int originalNumber, remainder, result = 0, n = 0;
     originalNumber = number;
@@ -52,6 +58,7 @@ class all {
       System.out.println(number + " is not an Armstrong number.");
   }
 
+  // Fibonacci
   void fibo() {
     int n1 = 0, n2 = 1, n3, i, count = 10;
     System.out.print(n1 + " " + n2);
@@ -65,6 +72,7 @@ class all {
 }
 
 public class A {
+  // Main
   public static void main(String args[]) {
     all ob = new all();
     ob.factorial(ob.number);
