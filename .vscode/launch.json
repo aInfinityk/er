@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch test1",
+            "request": "launch",
+            "mainClass": "test1",
+            "projectName": "er_c8cba058"
+        },
+        {
+            "type": "java",
             "name": "Launch A",
             "request": "launch",
             "mainClass": "A",
