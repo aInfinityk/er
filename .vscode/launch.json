@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Area",
+            "request": "launch",
+            "mainClass": "Area",
+            "projectName": "er_c8cba058"
+        },
+        {
+            "type": "java",
             "name": "Launch course",
             "request": "launch",
             "mainClass": "course",
