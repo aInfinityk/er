@@ -1,0 +1,18 @@
+***** Game Chess ******
+@version 1.10
+@author Sachin Dhir
+
+
+***** Purpose ********
+
+Chess Game - which records the moves of the players. The game provides functionality to UNDO the moves by pressing F1 . Also the game provides for other chess functionalities. 
+
+******* To start *******
+
+Start the game using appletviewer. 
+
+appletviewer Board.htm
+
+Also note that first click on the piece you wish to move and then click on the target cell .  
+
+

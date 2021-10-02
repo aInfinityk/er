@@ -1,9 +1,14 @@
 {
     "java.project.sourcePaths": [
         "test1",
+        "programs 08-09-21",
         "multilevel hierarchical",
+        "Negetive Image",
+        "Morse Code",
+        "Hangman",
         "Exceptions",
+        "Board",
         "A",
-        "programs 08-09-21"
+        "Image Watermarking"
     ]
 }

@@ -1,4 +1,6 @@
-import java.io.*;
+package Exceptions;
+
+import java.io.IOException;
 
 class chainedexcep {
     public static void main(String[] args) throws Throwable {
