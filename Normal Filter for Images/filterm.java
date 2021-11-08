@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 
-public class negative {
+public class filterm {
     public static void main(String args[])throws IOException
     {
         BufferedImage img = null;

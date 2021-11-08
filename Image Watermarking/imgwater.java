@@ -38,7 +38,7 @@ public class imgwater {
         graphics.setColor(new Color(255, 0, 0, 40));
 
         // Setting watermark text
-        String watermark = "WaterMark";
+        String watermark = "This is a WaterMark";
 
         // Add the watermark text at (width/5, height/3)
         // location

@@ -55,13 +55,14 @@ public class morse
         for(int i = 0; i < alpha.length; ++i)
         {   
             char [] chars = letter.toCharArray();
-           for( i=0;i<letter.length;++i)
+           for( i=0;i<letter.length();++i)
            {
-            if(letter.equals(alpha[i]))
+            if(chars[i]==(alpha.charAt(i)))
             {
                 return morse[i];
             }
         }
+    }
         return " ";  // not found
     }
     public static String toAlpha(String dot)
