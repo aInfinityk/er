@@ -1,5 +1,3 @@
-package Exceptions;
-
 import java.io.IOException;
 
 class chainedexcep {

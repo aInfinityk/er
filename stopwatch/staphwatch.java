@@ -173,16 +173,4 @@ public class staphwatch extends Applet implements Runnable, ActionListener {
 			on = false;
 		}
 	}
-
-	
-	public static void main(String[] args)
-	{
-		staphwatch staph=new staphwatch();
-		staph.init();
-		staph.reset();
-		staph.update();
-		staph.changeLabel();
-		staph.run();
-		staph.actionPerformed(ActionEvent e);
-	}
 }
