@@ -18,7 +18,7 @@ public class imgwater {
 
         // Read image
         try {
-            f = new File("C:\\Users\\91748\\py_program\\Image processing\\86.jpg");
+            f = new File("*.jpg"); //Input Image Path
             img = ImageIO.read(f);
         } catch (IOException e) {
             System.out.println(e);
@@ -47,7 +47,7 @@ public class imgwater {
         // releases any system resources that it is using
         graphics.dispose();
 
-        f = new File("C:\\Users\\91748\\py_program\\Image processing\\86watermark.jpg");
+        f = new File(".jpg"); //Output Image Path
         try {
             ImageIO.write(temp, "png", f);
         } catch (IOException e) {
