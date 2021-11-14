@@ -15,15 +15,16 @@ public class demonslayer {
     public static int enemymeleedmg;
     public static int Level;
     public static String charclass;
-    public static boolean fighting = false; // globals for player stats & enemy stats
+    public static boolean tatakaeing = false; // globals for player stats & enemy stats
 
     private static void printStats() {
-        if(charclass.equals("mage")){
-             System.out.println(playerName + "\nhp: " + playerhp + "\nmana: " + mana + "\ndamage: " + playermeleedmg + "\nxp: " + xp + "\n");
-        }else{
+        if (charclass.equals("mage")) {
+            System.out.println(playerName + "\nhp: " + playerhp + "\nmana: " + mana + "\ndamage: " + playermeleedmg
+                    + "\nxp: " + xp + "\n");
+        } else {
             System.out.println(playerName + "\nhp: " + playerhp + "\ndamage: " + playermeleedmg + "\nxp: " + xp + "\n");
         }
-        }
+    }
 
     private static void printEnemyStats() {
         System.out.println("Enemy " + "\nhp: " + enemyhp + "\ndmg: " + enemymeleedmg + "\n");
@@ -83,21 +84,21 @@ public class demonslayer {
         }
     }
 
-    private static void fight() {
+    private static void tatakae() {
         String action;
         String spellAction = null;
         System.out.println("An enemy approaches");
         buildEnemy();
-        fighting = true;
-        while (fighting = true) {
+        tatakaeing = true;
+        while (tatakaeing = true) {
             System.out.println("Press 'a' to attack\nPress 'i' for info");
             if (charclass.equals("mage")) {
                 System.out.print("Press 's' for spells\n");
             }
             action = scan.nextLine();
             if (action.charAt(0) == 'a') {
-                fighting = attack();
-                if (fighting == false) {
+                tatakaeing = attack();
+                if (tatakaeing == false) {
                     switch (Level) {
                     case 1:
                         xp = xp + 4;
@@ -295,23 +296,23 @@ public class demonslayer {
             }
             printStats();
             while (Level == 1) {
-                fight();
+                tatakae();
             }
             System.out.println("This area is clear... time to move on\n");
             while (Level == 2) {
-                fight();
+                tatakae();
             }
             System.out.println("This area is clear... time to move on\n");
             while (Level == 3) {
-                fight();
+                tatakae();
             }
             System.out.println("This area is clear... time to move on\n");
             while (Level == 4) {
-                fight();
+                tatakae();
             }
             System.out.println("This area is clear... time to move on\n");
             while (Level == 5) {
-                fight();
+                tatakae();
             } // keeps in area until levelUp
         }
 
