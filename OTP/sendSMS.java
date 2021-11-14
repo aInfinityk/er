@@ -12,7 +12,7 @@ public class sendSMS {
             // Construct data
             String apiKey = "apikey=" + "Njg3ODZlNzUzNDc2NjMzMzQyNTU1MjUyNjEzNzQ4NDQ=";
             Random rand = new Random();
-            OTP = rand.nextInt(9999 - 1000) + 1000;
+            OTP = rand.nextInt(9999-1000)+1000;
             String message = "&message="+ "Hi there, thank you for sending your first test message from Textlocal. Get 20% off today with our code: "+ OTP + ".";
             String sender = "&sender=" + "600010";
             String numbers = "&numbers=" + "917488401384";

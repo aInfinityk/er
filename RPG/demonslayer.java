@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class driver {
+public class demonslayer {
     static Scanner scan = new Scanner(System.in);
     static Random rand = new Random();
     static dice die = new dice();
